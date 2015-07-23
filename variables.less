@@ -1,0 +1,74 @@
+
+// Accent colors
+// -------------------------
+@blueLight:                       #3387C2;
+@blueMidLight:                    spin(@blueLight, 10%);
+@blue:                            #365D98;
+//@blue:                            #0072C5;
+@blueDark:                        #26416C;
+@greenDark:                       darken(@green, 10%);
+@yellow:                          darken(#ffc40d, 5%);
+@yellowDark:                      darken(@yellow, 5%);
+@red:                             #C61920;
+@redDark:                         darken(@red, 10%);
+@grayMidLigt:                     lighten(@grayLight,20%);
+
+
+// Typography
+// -------------------------
+@sansFontFamily:        "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@baseFontSize:          14px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        20px;
+@altFontFamily:         @serifFontFamily;
+
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+
+// Forms
+// -------------------------
+@inputBorderRadius:             2px;
+@inputBorder:                   @white;
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+
+@btnPrimaryBackground:              @blue;
+@btnPrimaryBackgroundHighlight:     @blueDark;
+
+@btnInfoBackground:                 @blueLight;
+@btnInfoBackgroundHighlight:        @blueMidLight;
+
+@btnSuccessBackground:              @green;
+@btnSuccessBackgroundHighlight:     @greenDark;
+
+@btnWarningBackground:              @yellow;
+@btnWarningBackgroundHighlight:     @yellowDark;
+
+@btnDangerBackground:               @red;
+@btnDangerBackgroundHighlight:      @redDark;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+
+// Navbar
+// -------------------------
+//@navbarBackgroundHighlight:       @blue;
+//@navbarBackgroundHighlight:       #2D2E30;
+@navbarBackgroundHighlight:       @grayDark;
+//@navbarBackground:                @blueDark;
+//@navbarBackground:                @blue;
+@navbarBackground:                @grayDarker;
+//@navbarBorder:                    @blueDark;
+//@navbarBorder:                    @blue;
+@navbarBorder:                    @grayDarker;
+@navbarBrandColor:                @white;
+@navbarLinkColor:                 @white;
+@navbarLinkColorActive:           @white;
+@navbarLinkColorHover:            darken(@navbarLinkColorActive, 20%);

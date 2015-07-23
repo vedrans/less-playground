@@ -1,0 +1,95 @@
+// Buttons
+// --------------------------------------------------
+.btn {
+  .border-radius(1px);
+  border: 1px solid @btnBorder;
+//  -webkit-box-shadow: 1px 1px 3px -1px #000;
+//  box-shadow: 1px 1px 3px -1px #000;
+}
+
+.btn-link{
+  border: 0px solid @btnBorder;
+}
+
+.btn-bordered{
+  border: 1px solid @grayMidLigt;
+}
+
+.btn-default{
+  .btn-bordered
+}
+
+.btn-warning, .btn-warning:hover{
+  color: @grayDark;
+}
+
+
+.bigBoxShadow{
+  box-shadow: 3px 4px 10px -1px #000;
+  -moz-box-shadow: 3px 4px 10px -1px #000;
+  -webkit-box-shadow: 3px 4px 10px -1px #000;
+}
+
+.littleBoxShadow{
+  -moz-box-shadow: 0px 1px 5px 1px @grayDark;
+  -webkit-box-shadow: 0px 1px 5px 1px @grayDark;
+  box-shadow: 0px 1px 5px 1px @grayDark;
+}
+.navbar{
+//  .littleBoxShadow
+}
+
+// Font
+//---------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext);
+body{
+  font-family: @sansFontFamily;
+  font-weight: 400;
+//  padding-top: 60px;
+}
+
+.container{
+  padding: 60px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+input.search-query {
+  .border-radius(0);
+}
+
+.input-prepend input,
+.input-append input{
+  border: 1px solid #ccc;
+}
+
+span.required{
+ color: @red;
+}
+
+.errorSummary{
+  color: @red;
+  background: lighten(@red, 50%);
+  padding: 15px;
+}
+
+.errorMessage{
+  color: @red;
+}
+
+.navbar-inner{
+  .border-radius(0);
+}
+
+/*
+
+.navbar-fixed-top.navbar-absolute {
+  position: absolute;
+  margin: 0;
+}
+*/
